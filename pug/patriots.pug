@@ -1,0 +1,324 @@
+extends includes/base_template
+include includes/mixins
+
+block variables
+  //- don't forget to update the next lines with the team name for SEO!
+  - var team_name = "New England Patriots"
+  //- city must be lower case!
+  - var city = "boston"
+  - var desc = 'An Atlanta Falcons fan aiming to travel to all 32 NFL franchise venues visits the New England Patriots'
+  
+
+block prepend title_block
+  title The Football Tour - New England Patriots
+
+
+block append game_summary
+  .team_name NEW ENGLAND
+  .venue GILLETTE STADIUM
+  .subtext
+    p 10/22/2017
+    p 52 °F, cloudy
+    p 65,878 in attendance
+    p Week 1 of the NFL
+    p 8:30PM Kickoff
+    p Seats in section 329
+
+
+block main_block
+  h1 FRIDAY
+  p We went to Boston with the intent of coming back with a Falcons win. We also wanted to enjoy some of the history the city had to offer.  This game was the year after the Falcons' Super Bowl collapse where they blew a 25-point lead to lose the game to the Patriots.  This was, of course, the worst Super Bowl collapse up until this point (and will likely remain the worst of all time).  We knew going into this game that the stakes were high and we were well-prepared to be heckled by the Patriots fans.  This generally occurs when we travel to see a game but we were especially ready for it given the circumstances surrounding that loss.  This was a Sunday Night primetime game (a rarity for my Football Tour experiences) we couldn't wait for this game!
+  //-Should the mixin for these images be re-written to basically take tuples or lists and get the count and automatically add the '.grid-container' div at the beginning of everything?
+  .grid-container
+    +image('article_1', 'A girl and a lucky dude', 'Maria')
+  p The trip started uneventfully from the airport to the hotel on Friday morning.  This year we went with our friends Maria and Luke, the first trip we have been on with them.  When we checked in to the hotel, we were offered a view on the higher floors and jumped at the 'free upgrade.'  The clerk smiled and nodded when we asked if there was a noteworthy view.  He was obviously proud of his establishment and expected we would be quite impressed with what we saw.  This surprised me a little bit because we were basically in the slums.  Luke also asked him where the best lunch spot was and he quickly offered his opinion on a Hungarian place called 'Cafe Polonia.'  We headed up to drop our bags off in the room and found the view left a little to be desired.  Basically that 6th-floor 'view' was a look into a parking lot of a shopping mall.  It wasn't even a fancy strip mall and in fact, I'd call it a 'modest' strip mall.  Skeptical of this guy's opinions, we took a short walk and were pleasantly surprised by the offerings of Cafe Polonia.  The food was impressive and everyone enjoyed their meal, our first taste of Hungary.  Pierogies, potato pancakes, sausage, and stuffed cabbage were seen on all of our plates.  I don't think anyone had a complaint about anything that we ate in that place.  If you ever find yourself looking over the Home Depot and Old Navy of the 'South Bay Center,' do yourself a favor and take a short hike to the Cafe Polonia, you won't be disappointed!
+  p Leading up to the trip, we all played a weird game of 'chicken' where we all encouraged each other to find an activity and if need be, get some reservations or tickets for said event.  I say it was a game of chicken because no one wanted to put the effort or time in to do it.  We all kind of hoped another member of our group would diligently complete this task.  Cut back to the hotel room.  Interior.  Wide shot.  We all sat there and almost on impulse decided to make the drive to Salem.  Our good friend Frances Findley recommended we make the trip out there a few weeks prior and that seed finally came to blossom.  We hopped in the car and started the hour drive (or so we were told by our GPS devices) to Salem.  Boston has some tunnels.  Boston has some people.  Those things don't mix, at least not in Boston.  Never have I seen a more dilapidated road system or group of roads.  Dallas gives Boston a run for its money but I think Boston takes the cake with its tunnels.  We got stuck in traffic and finally made our way into Salem.  One thing we did notice were how many Dunkin Donuts there were.  That place is Boston's Waffle House.  We would see one across the street from another.  They were like rabbits!  That city enjoys their confectionery delights!  The views once we got out of the city were pretty amazing.  The trees were turning, making for a colorful backdrop as we approached the ocean.  The houses and general architecture were inspiring and really cool to look at and consider the history of the town.
+  p Unfortunately, we arrived later than we had hoped and didn't have reservations or tickets to any of the events that were taking place late October in Salem (shocker, right?).  There was a fair that was happening, though.  That's another thing, Boston loves its fairs.  Any reason to put up a tent, really, and they are all for it.  Farmers market, craft sale, beer garden, food.  Tents everywhere.  There were a few things on our agenda once we saw the fair: Junk food, haunted house, and a shady-looking rotating pendulum carnival ride (which ended up being much more terrifying than the haunted house).  After walking around Salem and getting a good vibe from all of the trinket shops, people dressed as witches just to celebrate, and the city in general, we visited the Salem Witch Trials Memorial cemetery.  We took a few creepy pictures of the gravestones, getting a free lesson from a nearby walking tour and then headed over to the fair area.
+  .grid-container
+    +image('article_2a', 'Spooky Salem streets', 'Maria', '3')
+    +image('article_2b', 'Spooky Salem marketplace', 'Maria','3')
+    +image('article_2c', 'Salem bra selection', 'Maria','3')
+  p Right away, Maria, Luke, and I saw the ride we were most interested in and since it went up in the air higher than Marlene liked, she had no interest.  We bought the ride tickets and jumped on the ride.  All of us were a little giddy and excited about the ride, our inner child was showing!  There's something about how rickety they look and knowing that a lot of the workers are on PCP that just makes you worry and genuinely scared about carnival rides.  This one was great, when it would spin around and swing above the water just behind the ride, you had the feeling that drowning on that ride -then and there- would be the way we died.  There were two modes for the ride and we got to experience both while we screamed at the top of our lungs.  Definitely worth the $6 or whatever it was to take the spin.
+  .grid-container
+    +image('article_3', 'The little fair that was going on was a nice surprise!', 'Maria')
+  p Next, Maria and Marlene rode the ferris wheel while Luke and I hung out, patiently waiting for them to complete the ride because it was dinner time.  We decided to go healthy for dinner and get all of the carnival food that we could stand.  Corn dogs, chicken fingers, french fries, cotton candy, candied apples, and fried Oreos were all thoroughly enjoyed by all.  It's a little embarrassing how much we ate and how unhealthy it all was but it was a great way to end the first night of the trip!  We headed back to the hotel and the tunnels weren't nearly as bad without all of the traffic (I'm being an optimist, here!).
+
+  h1 SATURDAY
+  p Saturday morning was greeted with determination to complete a run.  We were training for a 5K later in the year and didn't want to go 4 days eating and drinking without getting a workout in (especially after that carnival dinner…)!  We went to nearby Joe Moakley Park and got in a nice walk/jog/sprint using an app to motivate us.  Since we felt like we earned it, donuts were in order!  Marlene found us a great place but it was a little bit of a drive. Twenty minutes later, we were in Union Square Donuts, a small place that keeps a steady line.  We all grabbed at least two donuts a piece and Maria and I went in on a growler of cold brew to keep us company the rest of our trip.  As for the donuts, Maple and Bacon, Salted Bourbon, Chocolate Marble, Boston Creme, and Honey Glazed were some of our choices.  They were fantastic and I remember everyone thoroughly enjoying their selections -take that, Dunkin Donuts!  The cold brew would prove to have been a wise decision for the remainder of our trip --if only we could have taken the growler home!
+  p After getting back to the hotel and taking turns getting a much-needed shower, it was time to venture out to see some of the history that Boston had to offer.  We decided on doing the Freedom Trail walk as a relaxing way to see some of the sights.  Where we went a little off course early was when we started at Bell in Hand, America's oldest tavern.  We all got a beer and Luke decided these needed to be "tallboys."  It was a great call because it started a really fun night of seeing a tiny bit of history and drinking a bit too much beer.  The tavern was definitely cool and had a nice mix of what appeared to be locals and tourists.  I did get a "Rise Up!" from a fellow Falcons table as we left the bar because I was wearing my Falcons shirt -an added bonus.
+  .grid-container
+    +image('article_4a', "Luke, taking in some college football action while we wait for drinks at 'Bell in Hand'",'','3')
+    +image('article_4b', 'Maria, act like the camera is not here.','','3')
+    +image('article_4c', 'Marlene liked her drink!','','3')
+  p As we continued up the Freedom Trail, we saw someone eating pizza and decided that would really set things off.  A quick jump on Yelp and some wrong turns by me and we finally settled on trying Locale Pizza.  I really liked the place because they had great appetizers, pizza, and a nice selection of local brews to try.  I settled on a local IPA (IPAs… the pumpkin spiced lattes for white men…) and we all had a few rounds as we enjoyed dinner.  After leaving, we finally got to see Paul Revere's house and the historic Old North Church.  We didn't get very close to the church but we did snap a handful of pictures of it along with the Revere house.  It was pretty cool to think about the history of the country and the part that this town played in all of it.  I'm a bit of a building and woodworking nerd so I got to enjoy seeing the craftsmanship of the place and all of the nearby architecture, in fact.
+  .grid-container
+    +image('article_5', "The pizza at 'Locale Pizza' hit the spot!")
+  p As we continued our stroll, Luke couldn't help but notice all of the people walking around with white cardboard boxes with the name "Mike's Pastry" on the side.  He was intrigued and of course, our next stop was to go try a cannoli.  The place somehow claims to be "Home of the Cannoli," which is of course, preposterous.  They love claiming to be the first of everything!  History aside, it was a pretty good pastry and the beer had definitely kicked in as we enjoyed them while watching the sun set behind Boston.  After some time for Luke to decompress and prepare to drive again (see: sober up), we cut through the Boston Public Market to grab a coffee on the way to the car.  Back in the hotel room, I talked the gang into watching "The Usual Suspects," most selfishly because I was tired of trying to make Keyser Söze references to an audience of glassy-eyed unimpressed individuals.  It went over O.K. and Spacey is still Soze.
+  .grid-container
+    +image('article_6a', 'The line for a famous pastry was real', '', '2')
+    +image('article_6b', 'Obligatory dessert shot', '', '2')
+
+  h1 SUNDAY
+  p We woke Sunday morning with anticipation as gameday was upon us.  We started the day with brunch on our minds and Maria/Luke found a place called Trident that had awesome reviews.  We made the trek out there where were greeted with a 30-45 minute wait (well worth it).  Once inside, we all got some delicious selections consisting of eggs, biscuits, gravy, and home fries.  It really hit the spot and just outside the dining area was a pretty nice collection of books, magazines, and trinkets.  We spent the better part of an hour walking around looking at all the place had to offer.
+  .grid-container
+    +image('article_7', 'Breakfast at Trident --So much good food on this trip!','Luke')
+  p Next on our list was a little more history from the city of Boston, or Charlestown, to be specific.  We really wanted to go see the USS Constitution and luckily, she was on display in the bay.  I say 'luckily' because it was apparently out to sea the weekend prior on some sort of ceremony or tour.  We walked through the museum after showing our I.D. to a Navy midshipman.  It was both surprising and cool that the person 'guarding' the place was a member of our military, and not some randomly employed citizen.  The museum was small but packed with cool information about the construction of the vessel and had some pretty sweet displays set up to show how large the rivets were, how chains were welded together, and how ropes were woven to form strong restraints.  After the museum was the tour of the ship and you accessed it by walking up a long flat (fairly steep) ramp. Launched in 1797, 'Old Ironsides' is the world's oldest commissioned naval vessel still afloat.  She was named by George Washington himself.  The first thing I noticed when I boarded was a large oak dovetail.  Being a woodworker myself and a general fan of all things crafted, I was blown away at the size and fit of the joint.  I read that most of the wood that was used to build the ship were cut and milled in Georgia, which was a proud fact for our group of southerners.  Small details to catch your eye are spread throughout the ship.  It felt like it was built to be displayed.  Definitely one of my favorite memories from this trip!
+  .grid-container
+    +image('article_8', 'The USS Constitution in all of her glory','Maria')
+  p Right across the naval yard was a WWII Destroyer which you could also board.  We walked onto it and were greeted by interesting facts and displays that explained how the ship functioned.  They even had a few compartments like eating quarters and the communications room that were staged to look like the ship was still in use, a nice touch in my opinion.  I didn't enjoy it as much as the Constitution, but that's to be expected as it didn't have the lustre or history to match up.
+  .grid-container  
+    +image('article_9a', 'Ready for war','Maria', '2')
+    +image('article_9b', 'Dovetail because I like woodworking','Maria', '2')
+  p It was getting to be later in the afternoon so we headed back to the hotel to prepare for the game.  Jerseys were donned, showers were taken, and cold brew coffee was consumed.  We jumped in the car to make the hour or so drive to Foxborough.  Not really having a plan, we got closer and closer to the stadium, passing the headquarters of Dunkin Donuts (go figure).  Eventually, we got a parking spot in a shared lot of the Pronti Sandwich Company and a liquor store.  It felt like the best intersection of distance to the stadium and price.  We hung out for a bit, enjoying a few beers and even getting grub from the aforementioned sandwich shop -which was pretty good, surprisingly!  Right before leaving for the game we shared a bite of one of their brownies and it was the perfect thing because the rest of the night would be a disappointment --See: the game.
+
+  h1 THE GAME
+  p Next, we walked down the road and into the stadium, arriving before kickoff to grab our seats on the LAST ROW in the nose bleeds.  Okay -there was one row behind us, full of suckers just worse off than we were but it's more dramatic to proclaim we were on the last row.  That row of 'suckers' was actually largely made up of fellow Falcons' fans and boy were all of us in for a gloomy game!  It started off pretty evenly matched, with no points being scored in the first quarter.  A bit of foreshadowing came late in that quarter when the Falcons elected to go for it on 4th-and-7 from mid-field!  They actually picked up the first down, but that was basically the highlight of the game for Falcons fans.  The Patriots blocked a chip-shot field goal to set up 23 unanswered points from the recent Super Bowl champs.  The game was filled with big plays from the Pats on both sides of the ball and tipped passes, running into defenders, and just bad play-calling for the good guys.
+  .grid-container
+    +image('article_10', 'The seats were high but still a nice view!')
+  p It was cold.  Not even chilly!  It was just cold!  Being as high as we were, the constant breeze really made you miserable.  At one point, just to warm up, Maria and I ran down to grab everyone coffees (they sell -you guessed it- Dunkin Donuts coffee right in the stadium!).  The fog moved in quickly and it was odd because I literally mistook it for smoke instead of fog.  Here's my twisted logic: Every time the Patriots scored, fireworks were shot off, smoke billowed from canons on the field and it lingered for quite some time after that.  The Pats were beating us so badly, I'd just assumed the fog was a cloud of perpetual smoke from the in-house theatrics.  Sadly, we left the game early -wanting to beat traffic out of there knowing the Falcons had no chance of coming back.  Everything just felt like it was going the way of the Patriots and it did.  The game ended 23-7, in favor of the bad guys. Our night ended after a late run through a McDonalds drive-through for some greasy food to help us cope with the game.  Yup! Chain food on vacation.  McDonalds, at that!  But it was just what we needed to get over that game.
+  .grid-container  
+    +image('article_11', "A mixture of fog and the fireworks.  This game became the 'fog bowl'", 'Luke')
+
+  h1 MONDAY
+  p With a flight leaving for Atlanta at 4:00PM, we started Monday in search of a good cookie -something I've been known to enjoy.  We settled on a place called 'When Pigs Fly Bread' and the cookie was not really worth mentioning -so I won't (well, any more than that...).  The pretzel, however, and the house-made mustard… those were really delicious!
+  p Not wanting to leave Boston without a proper seafood experience, we had lunch at the Union Oyster House (America's oldest restaurant!)... A claim that's (unsurprisingly) disputed by several other establishments in the northeast alone.  What's not disputed is how quickly a lobster roll gets boring.  Sure, it was tasty at first, but as the meal went on, I got sick of it at frantic pace.  Luke grabbed clam chowder and said it was really good.  Marlene and Maria had some Boston baked beans to accompany their meal and I remember Marlene mentioning they were on par with a can of Bush's… an endorsement that should have a negative connotation, but Bush's aren't bad!  Safe to say this place isn't as much about great food and more about the historical status of being the first restaurant in America… or third.
+  p We made way to the airport and headed home, excited to see Sam and start thinking about next year… where we might actually have a chance at winning our Football Tour Game!  Thanks to Maria and Luke for joining us on this trip!  We had a blast and made a lot of great memories with them!
+
+
+
+block things_liked_block
+  li
+    a(href='https://www.cafepolonia.com/') Cafe Polonia
+  li Horribly Delicious Fair Food
+  li 
+    a(href='http://unionsquaredonuts.com/') Union Square Donuts
+  li
+    a(href='https://bellinhand.com/') Bell in Hand
+  li
+    a(href="https://www.mikespastry.com/") Mike's Pastry
+  li
+    a(href='https://www.tridentbookscafe.com/') Trident
+  li
+    a(href='https://ussconstitutionmuseum.org/') USS Constitution
+  li
+    a(href='hhttps://www.prontisandwichcompany.com/') Pronti Sandwich Company (mostly that brownie!)
+  li
+    a(href='https://sendbread.com/') When Pigs Fly Bread
+
+
+block gallery_block
+  +gallery_image('1')
+  +gallery_image('2')
+  +gallery_image('3')
+  +gallery_image('4')
+  +gallery_image('5')
+  +gallery_image('6')
+  +gallery_image('7')
+  +gallery_image('8')
+  +gallery_image('9')
+  +gallery_image('10')
+  +gallery_image('11')
+  +gallery_image('12')
+  +gallery_image('13')
+  +gallery_image('14')
+  +gallery_image('15')
+  +gallery_image('16')
+  +gallery_image('17')
+  +gallery_image('18')
+  +gallery_image('19')
+  +gallery_image('20')
+  +gallery_image('21')
+  +gallery_image('22')
+  +gallery_image('23')
+  +gallery_image('24')
+  +gallery_image('25')
+  +gallery_image('26')
+  +gallery_image('27')
+  +gallery_image('28')
+  +gallery_image('29')
+  +gallery_image('30')
+  +gallery_image('31')
+  +gallery_image('32')
+  +gallery_image('33')
+  +gallery_image('34')
+  +gallery_image('35')
+  +gallery_image('36')
+  +gallery_image('37')
+  +gallery_image('38')
+  +gallery_image('39')
+  +gallery_image('40')
+  +gallery_image('41')
+  +gallery_image('42')
+  +gallery_image('43')
+  +gallery_image('44')
+  +gallery_image('45')
+  +gallery_image('46')
+  +gallery_image('47')
+  +gallery_image('48')
+  +gallery_image('49')
+  +gallery_image('50')
+  +gallery_image('51')
+  +gallery_image('52')
+  +gallery_image('53')
+  +gallery_image('54')
+  +gallery_image('55')
+  +gallery_image('56')
+  +gallery_image('57')
+  +gallery_image('58')
+  +gallery_image('59')
+  +gallery_image('60')
+  +gallery_image('61')
+  +gallery_image('62')
+  +gallery_image('63')
+  +gallery_image('64')
+  +gallery_image('65')
+  +gallery_image('66')
+  +gallery_image('67')
+  +gallery_image('68')
+  +gallery_image('69')
+  +gallery_image('70')
+  +gallery_image('71')
+  +gallery_image('72')
+  +gallery_image('73')
+  +gallery_image('74')
+  +gallery_image('75')
+  +gallery_image('76')
+  +gallery_image('77')
+  +gallery_image('78')
+  +gallery_image('79')
+  +gallery_image('80')
+  +gallery_image('81')
+  +gallery_image('82')
+  +gallery_image('83')
+  +gallery_image('84')
+  +gallery_image('85')
+  +gallery_image('86')
+  +gallery_image('87')
+  +gallery_image('88')
+  +gallery_image('89')
+  +gallery_image('90')
+  +gallery_image('91')
+  +gallery_image('92')
+  +gallery_image('93')
+  +gallery_image('94')
+  +gallery_image('95')
+  +gallery_image('96')
+  +gallery_image('97')
+  +gallery_image('98')
+  +gallery_image('99')
+  +gallery_image('100')
+  +gallery_image('101')
+  +gallery_image('102')
+  +gallery_image('103')
+  +gallery_image('104')
+  +gallery_image('105')
+  +gallery_image('106')
+  +gallery_image('107')
+  +gallery_image('108')
+  +gallery_image('109')
+  +gallery_image('110')
+  +gallery_image('111')
+  +gallery_image('112')
+  +gallery_image('113')
+  +gallery_image('114')
+  +gallery_image('115')
+  +gallery_image('116')
+  +gallery_image('117')
+  +gallery_image('118')
+  +gallery_image('119')
+  +gallery_image('120')
+  +gallery_image('121')
+  +gallery_image('122')
+  +gallery_image('123')
+  +gallery_image('124')
+  +gallery_image('125')
+  +gallery_image('126')
+  +gallery_image('127')
+  +gallery_image('128')
+  +gallery_image('129')
+  +gallery_image('130')
+  +gallery_image('131')
+  +gallery_image('132')
+  +gallery_image('133')
+  +gallery_image('134')
+  +gallery_image('135')
+  +gallery_image('136')
+  +gallery_image('137')
+  +gallery_image('138')
+  +gallery_image('139')
+  +gallery_image('140')
+  +gallery_image('141')
+  +gallery_image('142')
+  +gallery_image('143')
+  +gallery_image('144')
+  +gallery_image('145')
+  +gallery_image('146')
+  +gallery_image('147')
+  +gallery_image('148')
+  +gallery_image('149')
+  +gallery_image('150')
+  +gallery_image('151')
+  +gallery_image('152')
+  +gallery_image('153')
+  +gallery_image('154')
+  +gallery_image('155')
+  +gallery_image('156')
+  +gallery_image('157')
+  +gallery_image('158')
+  +gallery_image('159')
+  +gallery_image('160')
+  +gallery_image('161')
+  +gallery_image('162')
+  +gallery_image('163')
+  +gallery_image('164')
+  +gallery_image('165')
+  +gallery_image('166')
+  +gallery_image('167')
+  +gallery_image('168')
+  +gallery_image('169')
+  +gallery_image('170')
+  +gallery_image('171')
+  +gallery_image('172')
+  +gallery_image('173')
+  +gallery_image('174')
+  +gallery_image('175')
+  +gallery_image('176')
+  +gallery_image('177')
+  +gallery_image('178')
+  +gallery_image('179')
+  +gallery_image('180')
+  +gallery_image('181')
+  +gallery_image('182')
+  +gallery_image('183')
+  +gallery_image('184')
+  +gallery_image('185')
+  +gallery_image('186')
+  +gallery_image('187')
+  +gallery_image('188')
+  +gallery_image('189')
+  +gallery_image('190')
+  +gallery_image('191')
+  +gallery_image('192')
+  +gallery_image('193')
+  +gallery_image('194')
+  +gallery_image('195')
+  +gallery_image('196')
+  +gallery_image('197')
+  +gallery_image('198')
+  +gallery_image('199')
+  +gallery_image('200')
+  +gallery_image('201')
+  +gallery_image('202')
+  +gallery_image('203')
+  +gallery_image('204')
+  +gallery_image('205')
+  +gallery_image('206')
+  +gallery_image('207')
+  +gallery_image('208')
+  +gallery_image('209')
+  +gallery_image('210')
+  +gallery_image('211')
+  +gallery_image('212')
+  +gallery_image('213')
+  +gallery_image('214')
+  +gallery_image('215')  

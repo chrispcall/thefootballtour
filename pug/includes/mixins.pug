@@ -1,0 +1,48 @@
+mixin image(name, alt, photoby='', columns='1')
+  .grid-element
+    .image-container
+      if columns === '1'
+        img(
+          class='image lazyload' 
+          src="images/" + name + "-1000.jpg" 
+          srcset="images/" + name + "-1500.jpg, 1500w," + "images/" + name + "-1000.jpg, 1000w," + "images/" + name + "-500.jpg, 500w"
+          sizes ="(-webkit-device-pixel-ratio : 3) 10vw, (max-device-width: 375px) 30vw, (max-device-width: 1000px) 70vw , 100vw"
+          alt=alt
+          )
+      else if columns === '2'
+        img(
+          class='image lazyload' 
+          src="images/" + name + "-1000.jpg" 
+          srcset="images/" + name + "-1500.jpg, 1500w," + "images/" + name + "-1000.jpg, 1000w," + "images/" + name + "-500.jpg, 500w"
+          sizes ="(-webkit-device-pixel-ratio : 3) 10vw, (max-device-width: 375px) 30vw, (max-device-width: 1000px) 70vw , 50vw"
+          alt=alt
+          )
+      else
+        img(
+          class='image lazyload' 
+          src="images/" + name + "-1000.jpg" 
+          srcset="images/" + name + "-1500.jpg, 1500w," + "images/" + name + "-1000.jpg, 1000w," + "images/" + name + "-500.jpg, 500w"
+          sizes ="(-webkit-device-pixel-ratio : 3) 10vw, (max-device-width: 375px) 30vw, (max-device-width: 1000px) 70vw , 30vw"
+          alt=alt
+          )
+      if photoby
+        figurecaption=alt
+          span='Photo by ' + photoby
+      else
+        figurecaption=alt
+
+
+mixin gallery_image(name, caption='')
+  a(href="images/" + name + "-500.jpg"
+    data-at-500="images/" + name + "-500.jpg"
+    data-at-1000="images/" + name + "-1000.jpg"
+    data-at-1500="images/" + name + "-1500.jpg"
+    data-caption=caption
+  )
+    img(
+      class='lazyload gallery_thumb' 
+      src="images/thumbs/" + name + "-100.jpg"
+      srcset="images/thumbs/" + name + "-200.jpg 150w, images/thumbs/" + name + "-150.jpg 100w, images/thumbs/" + name + "-100.jpg 75w"
+      sizes ="(-webkit-device-pixel-ratio : 3) 10vw, (max-device-width: 375px) 30vw, (max-device-width: 1000px) 70vw , 100vw"
+      alt=caption
+      )
