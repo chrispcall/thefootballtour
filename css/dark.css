@@ -49,7 +49,7 @@ a:hover {
 }
 
 .bg {
-  background-image: url(http://thefootballtour.com/patriots/images/hero-1500.jpg);
+  background-image: url(../images/hero-1500.jpg);
   position: relative;
   background-size: cover;
   background-position: center;
@@ -280,7 +280,7 @@ figurecaption span {
 /*Smaller Screens*/
 @media only screen and (max-device-width: 999px) and (orientation: portrait) {
   .bg{
-    background-image: url(http://thefootballtour.com/patriots/images/hero-500.jpg);
+    background-image: url(../images/hero-500.jpg);
   }
   #header{
     position: fixed;
@@ -374,6 +374,17 @@ figurecaption span {
   }
 }
 
+/* Laptops and medium-sized */
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1320px){
+  .nav-items li{
+    font-size: .9rem;
+    padding: 2rem .5rem;
+  }
+  #game_summary{
+    top:60%;
+  }
+}
+
 /* iphone x and up to get rid of the edges in landscape mode */
 @media only screen and (min-device-height : 800px) and (-webkit-device-pixel-ratio : 3) and (orientation: landscape) {
   body{
@@ -383,7 +394,7 @@ figurecaption span {
  
 @media only screen and (max-device-width: 999px) and (orientation: landscape) {
   .bg{
-    background-image: url(http://thefootballtour.com/patriots/images/hero-1000.jpg);
+    background-image: url(../images/hero-1000.jpg);
   }
   #game_summary {
     top: 60%;
