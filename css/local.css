@@ -1,0 +1,16 @@
+.bg {
+  background-image: url(../images/hero-1500.jpg);
+}
+
+/*Smaller Screens*/
+@media only screen and (max-device-width: 999px) and (orientation: portrait) {
+  .bg{
+    background-image: url(../images/hero-500.jpg);
+  }
+}
+ 
+@media only screen and (max-device-width: 999px) and (orientation: landscape) {
+  .bg{
+    background-image: url(../images/hero-1000.jpg);
+  }
+}

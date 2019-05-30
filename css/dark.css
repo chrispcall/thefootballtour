@@ -38,6 +38,10 @@ p {
   padding-top: 15px;
 }
 
+p span {
+  color: var(--h1);
+}
+
 a:link, a:visited {
   color: var(--oppposite);
   text-decoration: none;
@@ -156,6 +160,12 @@ a:hover {
 .subtext p {
   font-weight: 100;
   margin: 3vh 0;
+}
+
+.subtext p span{
+  padding: 5px 8px;
+  margin: 5px;
+  background: rgba(0,0,0,.6);
 }
 
 h1 {

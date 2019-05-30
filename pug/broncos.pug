@@ -4,8 +4,6 @@ include includes/mixins
 block variables
   //- don't forget to update the next lines with the team name for SEO!
   - var team_name = "Denver Broncos"
-  //- city must be lower case! actually, do we still even use the city variable?
-  - var city = "denver"
   - var desc = 'An Atlanta Falcons fan aiming to travel to all 32 NFL franchise venues visits the Denver Broncos'
   //change this next line to 'light.css' or 'dark.css' if the 'hero' image is light or dark in color!
   - var this_css = 'dark.css'
@@ -16,64 +14,332 @@ block prepend title_block
 
 
 block append game_summary
-  .team_name NEW ENGLAND
-  .venue GILLETTE STADIUM
+  .team_name Denver Broncos
+  .venue Sports Authority Field (at Mile High Stadium)
   .subtext
-    p 10/22/2017
-    p 52 °F, cloudy
-    p 65,878 in attendance
-    p Week 1 of the NFL
-    p 8:30PM Kickoff
-    p Seats in section 329
+    p 10/9/2016
+    p 72 °F, mostly cloudy
+    p 76,802 in attendance
+    p Week 5 of the NFL
+    p 2:05PM Kickoff
+    p Seats in section 533
+    p <span>Falcons: 23</span> Broncos: 16
 
 
 block main_block
   h1 Denver: Sam's first flight
   p Early October in Denver was a trip the family looked forward to with a lot of anticipation.  Marlene really wanted to bring Sam so that ruled her out for the game.  This meant I needed a game buddy and Marlene needed a friend to hang out on Sunday while I was at the game.  My brother, Skip, and Sister-in-law, Barb stepped in and we planned out our trip.  The flight out there was awesome.  It was Sam's first flight and he was quiet as a mouse the entire time.  He slept, he played, he looked out the window.  It was great.  The flight back was a different story (more on that, later).
   .grid-container
-    +image('article_1', 'Something about the article', 'Skip?')
+    +image('article_1', 'The trees right outside the hotel were beautiful', 'Skip?')
   h1 SATURDAY
-  P We arrived in Denver October the 8th around noon and stayed until mid-day on the 11th. We grabbed lunch at a charcuterie place called 'Butcher's Bistro.' We all split the chef's selection charcuterie plate and then had burgers.  The food was pretty good, there, and not surprisingly, the meat and cheese was the best part of the meal. After dinner, we made our way to Civic Center Park.  The weather out was amazing and walking around that park with the sights (The Colorado State Capitol sits off in the distance and you are surrounded by buildings and greenspace with lots of cool memorials) was awesome.  We enjoyed spending time together and took turns pushing Sam around in his stroller.  He was not quite walking so the stroller was killer. For dinner, we made our way over to the 'Hopdaddy Burger Bar' inside Union Station.  We really liked the ambience of Union Station, it reminded me of many other transit-oriented mixed-use developments like 'Grand Central' and 'Ponce City Market', back home. I get nostalgic in places like that and really enjoy hanging out in them.  As far as dinner went, I know all of us agreed that 'Hopdaddy' made great burgers and shakes.  We all left full and happy on that first night.  Denver was treating us right.
+  P We arrived in Denver October the 8th around noon and stayed until mid-day on the 11th. We grabbed lunch at a charcuterie place called 'Butcher's Bistro.' We all split the chef's selection charcuterie plate and then had burgers.  The food was pretty good, there, and not surprisingly, the meat and cheese was the best part of the meal. After dinner, we made our way to Civic Center Park.  The weather out was amazing and walking around that park with the sights (The Colorado State Capitol sits off in the distance and you are surrounded by buildings and greenspace with lots of cool memorials) was awesome.  We enjoyed spending time together and took turns pushing Sam around in his stroller.  He was not quite walking so the stroller was killer. 
+  
+  .grid-container
+    +image('article_2a', 'Civic Center Park')
+    +image('article_2b', 'They had a lot of cool military stuff')
+    +image('article_2c', 'Denver City Council building')
+
+  p For dinner, we made our way over to the 'Hopdaddy Burger Bar' inside Union Station.  We really liked the ambience of Union Station, it reminded me of many other transit-oriented mixed-use developments like 'Grand Central' and 'Ponce City Market', back home. I get nostalgic in places like that and really enjoy hanging out in them.  As far as dinner went, I know all of us agreed that 'Hopdaddy' made great burgers and shakes.  We all left full and happy on that first night.  Denver was treating us right.
   
   h1 SUNDAY
 
-  P The next morning we woke up ready to go explore and we started out with a walk down the street to a really cool coffee spot a few blocks from our hotel called 'Thump Coffee.' They pour an excellent cup but their pastries were just OK.  Next, Skip and I stopped at a local beer and wine store to grab some drinks for the game (beer for me and of course, Crown for him) and jumped in the hotel shuttle to head to the game early.  I nearly forgot the tickets because we had to rush out to the shuttle so Skip stalled the driver while I sprinted up the stairs to our room to grab them.  Close call, but I made it back before they rolled off.  The shuttle dropped us off right in front of the stadium parking lot.  We planned on getting to the game pretty early to tailgate so it was perfect.  We busted open our drinks and starting walking around to see what the tailgaters were up to.
+  P The next morning we woke up ready to go explore and we started our with a walk down the street to a really cool coffee spot a few blocks from our hotel called 'Thump Coffee.' They pour an excellent cup but their pastries were just OK.  Next, Skip and I stopped at a local beer and wine store to grab some drinks for the game (beer for me and of course, Crown for him) and jumped in the hotel shuttle to head to the game early.  I nearly forgot the tickets because we had to rush out to the shuttle so Skip stalled the driver while I sprinted up the stairs to our room to grab them.  Close call, but I made it back before they rolled off.  The shuttle dropped us off right in front of the stadium parking lot.  We planned on getting to the game pretty early to tailgate so it was perfect.  We busted open our drinks and starting walking around to see what the tailgaters were up to.
+
+  .grid-container
+    +image('article_3', 'The "Mile High Monument"')
+
   P There's also this funny thing about time zones and alcohol (or time zones and me, maybe…) where I just don't know they exist.  I always knew the game started at 1PM because all of my research while planning for this trip showed the game starting at 1PM EST, so I was ready for the early tailgate and the game.  We got to the stadium about 3 hours prior to kickoff and were enjoying our drinks and chatting with the Denver faithful.  We saw some pretty cool tailgates and were really impressed with how cool and inviting the fans were to a couple of guys wearing Falcons jerseys.  Anyway as time went on and drinks went down, we start seeing more and more people heading into the stadium.  Then Skip hears last call from the beer tent nearby.  This meant nothing to us because we BYOBed and didn't need their overpriced Bud Light.  However, a lightbulb went off in Skip's head and he asks me if the game started at 1PM EST or 1PM MT.  That's when it hit me that different parts of the country are in different time zones and we were about to miss our game!  I threw the rest of my drink in the trash as he ran into a portable restroom.  I implored him to “hold it” until we were inside the stadium.  I really didn't want to miss kickoff.  He ignored my request and ran into the restroom.  From the point he walked out of the restroom, on, we were basically running to get into the stadium.  Through security.  Up the ramps.  Desperately searching for our seats.  We jog in and sit down in our seats (both now sweating profusely) and high-five each other just as the ball is kicked off.  We made it!
+  
+  .grid-container
+    +image('article_4a')
+    +image('article_4b')
+  
   P Our seats were in the nosebleeds but they were right along the 40-yard line and that stadium has a great layout so we felt a lot closer than the price on the tickets would show.  We enjoyed the game and had many good laughs at my expense about how time zones work and how the earth spins and all.  The action in the game was a bit boring to be honest but we stayed in the game the entire time. We actually played with the lead the whole game but it just had that feeling like were playing from behind. Denver was one of the best defenses in the league and the reigning Suber Bowl Champions so I was not expecting a win on the road.  The game came down to the final minutes and we thought were were going to let Denver come back to win it but we held on for the win.  We definitely exploited their defense with a lot of screens, swing passes, and wheel routes to our running backs.  The fans were really nice to us even though we had just come to town and stolen a “W” from them.
+  
+  .grid-container
+    +image('article_5a', 'The view on out walk out of the stadium')
+    +image('article_5b', 'Denver fans flooded out after we escaped with a win!')
+
   P After the game we met up with Marlene and Barb, who had taken Sam to the Zoo and a nearby park for the day while we enjoyed the game.  They got some great pictures of Sam and thoroughly enjoyed the zoo.  We had to walk along this long bridge to meet them when they came to pick us up (thanks, Skip--and thanks, Crown Royal…). But it made for a funny story to cap that funny day off.  We grabbed dinner at a place Marlene's friend recommended to us called 'Bastiens.'  If I remember correctly, we all got a steak and I know I remember we all really enjoyed to food there.  Skip and I had worked up an appetite with all of that walking (and drinking) during the game day.
 
   h1 MONDAY
 
-  P The next morning we went and had brunch at a place that Barb's friend recommended.  It was called 'Toast' and they served, well, you get the idea.  I actually did not order toast but I did get the Eggs Blackstone, which was really tasty and had a nice kick to it.  After brunch, we hit the road in search of mountains and red rocks.  We drove over to Red Rocks amphitheater first and got a look at the venue.  What a great place to see a show.  We all wished there was a band and more time for us to be able to enjoy one and it's definitely on the bucket list, now.  From the amphitheater, we drove to a nearby trailhead (still in Red Rocks park) and went on a short hike.  With the sun beating down on us and having an 11-month old baby, there wasn't much of a chance for a long hike.  Also, there aren't many trees in that area so forget about seeking shade to rest during a hike.
+  P The next morning we went and had brunch at a place that Barb's friend recommended.  It was called 'Toast' and they served, well, you get the idea.  I actually did not order toast but I did get the Eggs Blackstone, which was really tasty and had a nice kick to it.  After brunch, we hit the road in search of mountains and red rocks.  
+  
+  .grid-container
+    +image('article_6', '"Red Rocks" hit you right from the parking lot')
+
+  p We drove over to Red Rocks amphitheater first and got a look at the venue.  What a great place to see a show.  We all wished there was a band and more time for us to be able to enjoy one and it's definitely on the bucket list, now.  From the amphitheater, we drove to a nearby trailhead (still in Red Rocks park) and went on a short hike.  With the sun beating down on us and having an 11-month old baby, there wasn't much of a chance for a long hike.  Also, there aren't many trees in that area so forget about seeking shade to rest during a hike.
   P After hanging out and taking Sam's 11-month pictures at the park, we drove over I-70 toward the mountains.  We took pictures all along the way and eventually made it to Silverthorne, where we decided to eat. We Yelped and found a place to grab a bite called 'Dillon Dam Brewery'.  It was filling but nothing special.  It was basically a bar that was filled with snowboarders and skiers, even though it was just early October.  Dinner was fine, just not great.  After dinner we decided to make the drive back to the hotel so we hit I-70 East and enjoyed the mountain views on the way back into town.  Once back in the hotel, we decided dessert was in order.  We knew that the world famous 'Voodoo Donuts,' was down the street from our hotel and it kept calling our name.  This donut joint was started in Portland but had a location in Denver for us to try.  There was a line out the door at 9:00PM (MT) and we happily waited to get some fried dough.  I grabbed the 'Dirt' which is labeled as “Raised yeast doughnut with vanilla frosting and Oreo cookies,” because I'm all about the oreos.  I thought it was plenty tasty but super sweet, even for me (I usually really enjoy the sugar). 
+
+  .grid-container
+    +image('article_7', 'The mountains looked much bigger and better in person')
 
   h1 TUESDAY
 
   P For Lunch on our last day in Denver, we went to try the famous hotdog place, 'Biker Jim's Gourmet Dogs.'  Marlene and I were suckered into trying the fried mac & cheese because we are healthy eaters.  We were a little disappointed in what sounded like it would be a slam dunk. It was just really not all that great and personally, I'd rather have a really good regular mac and cheese.  The hotdogs were really great, though.  I know, it's just a hot dog… but it was really tasty and we all were glad we tried the place.  They had a nice bite to them and were juicy and filled with flavor.  I got the 'Coney' which was “New Jersey style chili with diced onions and yellow mustard.” Fantastic.
+  
+  .grid-container
+    +image('article_8', 'The parks in Denver are amazing')
+  
   P We had time to kill before our flight so we decided to spend a little time at a few of the parks around Denver.  We started with letting Sam take his first steps at Cheesman Park!  He had started to stand on his own and MAYBE he had taken  a step or two in the days ahead of our trip, but this was the first time he was able to take 3 steps consistently.  He went back and forth between Marlene and I walking and even navigating a small hill.  Next, we needed a park with a playground for Sam, so we ran over to 'City Park,' which was basically next door.  There, Sam enjoyed swinging and talking to the geese that filled the park up.  It was a nice way to decompress and end our time in Denver.
   P Lastly, we make the trek up to the airport and flew back home.  It was quite the chore because Sam was not feeling the pressure changes and was a lot more vocal than he was on the way out there.  We spent the entire flight consoling him and taking turns trying to keep him happy.  He would not sleep for anything so the entire flight was spent passing him between Uncle Skip, Aunt Barb, Mom, and Dad.  We were relieved when the flight was over because it was slightly traumatic for us.  All in all, it was a great trip, though.  We went out there and got a win, as well as some great memories (and pictures).
 
+  .grid-container
+    +image('article_9a', 'Sam getting ready for the flight back')
+    +image('article_9b', 'Sam had his moments but this was a good one')
 
 block things_liked_block
-  li
-    a(href='https://www.cafepolonia.com/') Cafe Polonia
-  li Horribly Delicious Fair Food
   li 
-    a(href='http://unionsquaredonuts.com/') Union Square Donuts
+    a(href='https://en.wikipedia.org/wiki/Civic_Center,_Denver') Civic Center Park
   li
-    a(href='https://bellinhand.com/') Bell in Hand
+    a(href='https://www.hopdoddy.com/') Hopdaddy Burger Bar
   li
-    a(href="https://www.mikespastry.com/") Mike's Pastry
+    a(href="https://www.thumpcoffee.com/") Thump Coffee
   li
-    a(href='https://www.tridentbookscafe.com/') Trident
+    a(href='https://www.denverzoo.org/') The Denver ZooThe Denver Zoo
   li
-    a(href='https://ussconstitutionmuseum.org/') USS Constitution
+    a(href='https://bastiensrestaurant.com//') Bastiens
   li
-    a(href='hhttps://www.prontisandwichcompany.com/') Pronti Sandwich Company (mostly that brownie!)
+    a(href='https://www.toastygoodness.com/') Toast
   li
-    a(href='https://sendbread.com/') When Pigs Fly Bread
+    a(href='http://www.bikerjimsdogs.com/') Biker Jim's Gourmet Dogs
 
 
 block gallery_block
   +gallery_image('1')
-  //more images will follow
+  +gallery_image('2')
+  +gallery_image('3')
+  +gallery_image('4')
+  +gallery_image('5')
+  +gallery_image('6')
+  +gallery_image('7')
+  +gallery_image('8')
+  +gallery_image('9')
+  +gallery_image('10')
+  +gallery_image('11')
+  +gallery_image('12')
+  +gallery_image('13')
+  +gallery_image('14')
+  +gallery_image('15')
+  +gallery_image('16')
+  +gallery_image('17')
+  +gallery_image('18')
+  +gallery_image('19')
+  +gallery_image('20')
+  +gallery_image('21')
+  +gallery_image('22')
+  +gallery_image('23')
+  +gallery_image('24')
+  +gallery_image('25')
+  +gallery_image('26')
+  +gallery_image('27')
+  +gallery_image('28')
+  +gallery_image('29')
+  +gallery_image('30')
+  +gallery_image('31')
+  +gallery_image('32')
+  +gallery_image('33')
+  +gallery_image('34')
+  +gallery_image('35')
+  +gallery_image('36')
+  +gallery_image('37')
+  +gallery_image('38')
+  +gallery_image('39')
+  +gallery_image('40')
+  +gallery_image('41')
+  +gallery_image('42')
+  +gallery_image('43')
+  +gallery_image('44')
+  +gallery_image('45')
+  +gallery_image('46')
+  +gallery_image('47')
+  +gallery_image('48')
+  +gallery_image('49')
+  +gallery_image('50')
+  +gallery_image('51')
+  +gallery_image('52')
+  +gallery_image('53')
+  +gallery_image('54')
+  +gallery_image('55')
+  +gallery_image('56')
+  +gallery_image('57')
+  +gallery_image('58')
+  +gallery_image('59')
+  +gallery_image('60')
+  +gallery_image('61')
+  +gallery_image('62')
+  +gallery_image('63')
+  +gallery_image('64')
+  +gallery_image('65')
+  +gallery_image('66')
+  +gallery_image('67')
+  +gallery_image('68')
+  +gallery_image('69')
+  +gallery_image('70')
+  +gallery_image('71')
+  +gallery_image('72')
+  +gallery_image('73')
+  +gallery_image('74')
+  +gallery_image('75')
+  +gallery_image('76')
+  +gallery_image('77')
+  +gallery_image('78')
+  +gallery_image('79')
+  +gallery_image('80')
+  +gallery_image('81')
+  +gallery_image('82')
+  +gallery_image('83')
+  +gallery_image('84')
+  +gallery_image('85')
+  +gallery_image('86')
+  +gallery_image('87')
+  +gallery_image('88')
+  +gallery_image('89')
+  +gallery_image('90')
+  +gallery_image('91')
+  +gallery_image('92')
+  +gallery_image('93')
+  +gallery_image('94')
+  +gallery_image('95')
+  +gallery_image('96')
+  +gallery_image('97')
+  +gallery_image('98')
+  +gallery_image('99')
+  +gallery_image('100')
+  +gallery_image('101')
+  +gallery_image('102')
+  +gallery_image('103')
+  +gallery_image('104')
+  +gallery_image('105')
+  +gallery_image('106')
+  +gallery_image('107')
+  +gallery_image('108')
+  +gallery_image('109')
+  +gallery_image('110')
+  +gallery_image('111')
+  +gallery_image('112')
+  +gallery_image('113')
+  +gallery_image('114')
+  +gallery_image('115')
+  +gallery_image('116')
+  +gallery_image('117')
+  +gallery_image('118')
+  +gallery_image('119')
+  +gallery_image('120')
+  +gallery_image('121')
+  +gallery_image('122')
+  +gallery_image('123')
+  +gallery_image('124')
+  +gallery_image('125')
+  +gallery_image('126')
+  +gallery_image('127')
+  +gallery_image('128')
+  +gallery_image('129')
+  +gallery_image('130')
+  +gallery_image('131')
+  +gallery_image('132')
+  +gallery_image('134')
+  +gallery_image('135')
+  +gallery_image('136')
+  +gallery_image('137')
+  +gallery_image('138')
+  +gallery_image('139')
+  +gallery_image('140')
+  +gallery_image('141')
+  +gallery_image('142')
+  +gallery_image('143')
+  +gallery_image('144')
+  +gallery_image('145')
+  +gallery_image('146')
+  +gallery_image('147')
+  +gallery_image('148')
+  +gallery_image('149')
+  +gallery_image('150')
+  +gallery_image('151')
+  +gallery_image('152')
+  +gallery_image('153')
+  +gallery_image('154')
+  +gallery_image('155')
+  +gallery_image('156')
+  +gallery_image('157')
+  +gallery_image('158')
+  +gallery_image('159')
+  +gallery_image('160')
+  +gallery_image('161')
+  +gallery_image('162')
+  +gallery_image('163')
+  +gallery_image('164')
+  +gallery_image('165')
+  +gallery_image('166')
+  +gallery_image('167')
+  +gallery_image('168')
+  +gallery_image('169')
+  +gallery_image('170')
+  +gallery_image('171')
+  +gallery_image('172')
+  +gallery_image('173')
+  +gallery_image('174')
+  +gallery_image('175')
+  +gallery_image('176')
+  +gallery_image('177')
+  +gallery_image('178')
+  +gallery_image('179')
+  +gallery_image('180')
+  +gallery_image('181')
+  +gallery_image('182')
+  +gallery_image('183')
+  +gallery_image('184')
+  +gallery_image('185')
+  +gallery_image('186')
+  +gallery_image('187')
+  +gallery_image('188')
+  +gallery_image('189')
+  +gallery_image('190')
+  +gallery_image('191')
+  +gallery_image('192')
+  +gallery_image('193')
+  +gallery_image('194')
+  +gallery_image('195')
+  +gallery_image('196')
+  +gallery_image('197')
+  +gallery_image('198')
+  +gallery_image('199')
+  +gallery_image('200')
+  +gallery_image('201')
+  +gallery_image('202')
+  +gallery_image('203')
+  +gallery_image('204')
+  +gallery_image('205')
+  +gallery_image('206')
+  +gallery_image('207')
+  +gallery_image('208')
+  +gallery_image('209')
+  +gallery_image('210')
+  +gallery_image('211')
+  +gallery_image('212')
+  +gallery_image('213')
+  +gallery_image('214')
+  +gallery_image('215')
+  +gallery_image('216')
+  +gallery_image('217')
+  +gallery_image('218')
+  +gallery_image('219')
+  +gallery_image('220')
+  +gallery_image('221')
+  +gallery_image('222')
+  +gallery_image('223')
+  +gallery_image('224')
+  +gallery_image('225')
+  +gallery_image('226')
+  +gallery_image('227')
+  +gallery_image('228')
+  +gallery_image('229')
+  +gallery_image('230')
+  +gallery_image('231')
+  +gallery_image('232')
+  +gallery_image('233')
+  +gallery_image('234')
+  +gallery_image('235')
+  +gallery_image('236')
+  +gallery_image('237')
