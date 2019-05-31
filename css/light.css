@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*variables*/
+:root {
+  --main: rgba(255, 255, 255, 1);
+  --dark-gray: rgba(60, 60, 60, 1);
+  --light-hover: rgba(0, 0, 0, 1);
+}
+
+.nav-items li a:link, .nav-items li a:visited {
+  color: var(--dark-gray);
+}
+
+.nav-items li a:hover {
+  color: var(--light-hover);
+}
+
+#game_summary {
+  color: var(--dark-gray);
+}
+
+.subtext p {
+  text-shadow: var(--main) 0 1px 1rem;
+}
+
+.subtext p span {
+  background: rgba(0, 0, 0, 0.6);
+  text-shadow: none;
+}
+
+/*Smaller Screens*/
+@media only screen and (max-device-width: 999px) and (orientation: portrait) {
+  .nav-items li {
+    border-bottom: 3px solid var(--opposite);
+  }
+}
