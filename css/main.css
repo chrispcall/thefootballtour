@@ -340,6 +340,9 @@ figurecaption span {
   .last_menu_item {
     border-bottom: none !important;
   }
+  #game_summary {
+    left: 70%;
+  }
   .venue {
     font-size: 2rem;
   }
